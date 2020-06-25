@@ -1,0 +1,16 @@
+body {
+  background-image: url("../images/johannes-plenio-RwHv7LgeC7s-unsplash.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 0px;
+  margin: 0px;
+  overflow-y: hidden;
+}
+
+#sidebar {
+  background-color: #611818;
+  width: 27vw;
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */
