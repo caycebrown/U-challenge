@@ -1,16 +1,74 @@
 body {
-  background-image: url("../images/johannes-plenio-RwHv7LgeC7s-unsplash.png");
-  background-repeat: no-repeat;
+  background: url("../images/johannes-plenio-RwHv7LgeC7s-unsplash.png") no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
+}
+
+.container {
   border: 0px;
+  padding: 0px;
   margin: 0px;
-  overflow-y: hidden;
 }
 
 #sidebar {
   background-color: #611818;
   width: 27vw;
   height: 100vh;
+}
+
+#Explore {
+  position: fixed;
+  margin-top: 35vh;
+  margin-left: 10vw;
+  width: 85vw;
+}
+
+h1 {
+  color: White;
+  font-size: 16vw;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 400;
+  letter-spacing: .75vw;
+}
+
+#details-btn {
+  margin: auto 2vw;
+  height: 3vw;
+  width: 3vw;
+}
+
+#more-details {
+  margin: auto 0;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: white;
+}
+
+.detail-div {
+  margin: 0;
+  transform: translateY(-150%);
+}
+
+.social {
+  height: 4vw;
+  width: 4vw;
+}
+
+.text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.text-focus-in-2 {
+  animation: text-focus-in 1.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

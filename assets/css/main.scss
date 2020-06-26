@@ -1,12 +1,15 @@
-
-body {
-    background-image: url("../images/johannes-plenio-RwHv7LgeC7s-unsplash.png");
-    background-repeat: no-repeat;
+body { 
+    background: url("../images/johannes-plenio-RwHv7LgeC7s-unsplash.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
+  }
+
+.container {
     border: 0px;
+    padding: 0px;
     margin: 0px;
-    overflow-y: hidden;
 }
 
 #sidebar {
@@ -14,3 +17,80 @@ body {
     width: 27vw;
     height: 100vh;
 }
+
+#Explore {
+    position: fixed;
+    margin-top: 35vh;
+    margin-left: 10vw;
+    width: 85vw;
+}
+
+h1 {
+    color: White;
+    font-size: 16vw;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    letter-spacing: .75vw;
+}
+
+#details-btn {
+    margin: auto 2vw;
+    height: 3vw;
+    width: 3vw;
+}
+
+#more-details {
+    margin: auto 0;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+}
+
+.detail-div {
+    margin: 0;
+    transform: translateY(-150%);
+}
+
+.social {
+    height: 4vw;
+    width: 4vw;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.text-focus-in-2 {
+	-webkit-animation: text-focus-in 1.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+//=================================================
+//Keyframes for animations
+//=================================================
+
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
